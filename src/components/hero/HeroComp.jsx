@@ -144,15 +144,14 @@ export const HeroComp = () => {
     position: absolute;
     right: 0;
     margin-right: 5vw;
-    border: 3px solid #be3c40;
+    border: none;
     background-color: #4e0046;
     border-radius: 10px;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-transform: uppercase;
-    -webkit-box-shadow: 24px 31px 17px -24px rgba(138, 136, 138, 1);
-    -moz-box-shadow: 24px 31px 17px -24px rgba(138, 136, 138, 1);
-    box-shadow: 24px 31px 17px -24px rgba(138, 136, 138, 1);
+    background: linear-gradient(145deg, #332b44, #2b243a);
+    box-shadow: 6px 6px 12px #13101a, -6px -6px 12px #4d4066;
     @media ${device.laptop} {
       left: 0;
       margin-top: 5vh;

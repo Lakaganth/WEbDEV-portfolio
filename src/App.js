@@ -9,9 +9,9 @@ import { Navbar } from "./components/navbar/Navbar";
 import { HeroComp } from "./components/hero/HeroComp";
 import { AboutComp } from "./components/about/AboutComp";
 import { Skills } from "./components/skills/Skills";
-import ProjectsComp from "./components/projects/ProjectsComp";
 
 import "./App.css";
+import { ProjectCard } from "./components/projects/ProjectCard";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
           <LazyLoad height={40}>
             <AboutComp></AboutComp>
             <Skills></Skills>
-            <ProjectsComp></ProjectsComp>
+            <ProjectCard></ProjectCard>
           </LazyLoad>
         </div>
       </Router>
