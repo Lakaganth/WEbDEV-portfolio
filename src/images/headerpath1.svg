@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1050.421" height="348.542" viewBox="0 0 1050.421 348.542">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.492" y1="0.346" x2="0.531" y2="1.269" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.067" stop-color="#e1e1e1"/>
+      <stop offset="0.212" stop-color="#a6a6a6"/>
+      <stop offset="0.358" stop-color="#737373"/>
+      <stop offset="0.499" stop-color="#4a4a4a"/>
+      <stop offset="0.637" stop-color="#292929"/>
+      <stop offset="0.769" stop-color="#121212"/>
+      <stop offset="0.892" stop-color="#040404"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_259" data-name="Path 259" d="M945.805,323.836C878.8,358.367,769.979,424.274,603.012,339.623,452.863,263.557,364.1,312.436,275.738,360.977S-17.69,437.938-26.544,309.142c-2.2-32.337,5.834-54.3,19.632-72.976,22.658-7.964,47.03-12.429,70.712-14.073,139.645-9.749,276.956,54.508,416.461,42.77A387.68,387.68,0,0,0,628.28,221.472c56.159-29.727,105.863-73.731,167.242-90.075A203.53,203.53,0,0,1,945.665,150.21c15.724,8.789,29.931,19.5,43.531,31.1C1021.872,243.17,1009.583,290.949,945.805,323.836Z" transform="matrix(-0.998, -0.07, 0.07, -0.998, 995.55, 471.101)" opacity="0.47" fill="url(#linear-gradient)" style="mix-blend-mode: overlay;isolation: isolate"/>
+</svg>
