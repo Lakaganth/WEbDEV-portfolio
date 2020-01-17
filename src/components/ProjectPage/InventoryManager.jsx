@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import SOSweb from "../../assets/sosweb.svg";
+import Inventory from "../../assets/inventory.svg";
 
-export const SosWebsite = () => {
+export const InventoryManager = () => {
   const PageContainer = styled.div`
     width: 80%;
     margin: 0 auto;
@@ -72,13 +72,13 @@ export const SosWebsite = () => {
   `;
   return (
     <PageContainer>
-      <h2>School of Sports - Website</h2>
+      <h2>School Of Sports - Reporting Web App</h2>
       <p>
-        School of sports is a startup with the aim to improve sport education in
-        schools by training students through specialized and proven coaches
+        A family run retail store with minimal usage of technology in
+        Nottingham, United Kingdom.
       </p>
       <div>
-        <a href="https://schoolofsports.herokuapp.com/" target="_blank">
+        <a href="https://sos-reporting-webpp.herokuapp.com/" target="_blank">
           <button>Live</button>
         </a>
         <Link to="/">
@@ -87,11 +87,12 @@ export const SosWebsite = () => {
       </div>
       <h4>Requirement</h4>
       <p>
-        The stock website was not reflecting the energy of the company and show
-        what they offer on the whole. Also. there was no way for them to update
-        the content and keep the website exciting for new and existing students
+        The inventory count takes up at least an hour before an purchase order
+        is put up and have no records on studying any sort of historical data.
+        The app must be fast and easy to use for any new employee with minimal
+        training.
       </p>
-      <img src={SOSweb} alt="" />
+      <img src={Inventory} alt="" />
       <Features>
         <h4>Features</h4>
         <p>

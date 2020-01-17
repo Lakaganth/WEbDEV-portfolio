@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import SOSweb from "../../assets/sosweb.svg";
+import SOSreport from "../../assets/sosreport.svg";
 
-export const SosWebsite = () => {
+export const SosReport = () => {
   const PageContainer = styled.div`
     width: 80%;
     margin: 0 auto;
@@ -72,13 +72,13 @@ export const SosWebsite = () => {
   `;
   return (
     <PageContainer>
-      <h2>School of Sports - Website</h2>
+      <h2>School Of Sports - Reporting Web App</h2>
       <p>
-        School of sports is a startup with the aim to improve sport education in
-        schools by training students through specialized and proven coaches
+        Site managers supervise the coaches going to schools and will have to
+        report back on fee payments, class durations and any feedback.
       </p>
       <div>
-        <a href="https://schoolofsports.herokuapp.com/" target="_blank">
+        <a href="https://sos-reporting-webpp.herokuapp.com/" target="_blank">
           <button>Live</button>
         </a>
         <Link to="/">
@@ -87,11 +87,11 @@ export const SosWebsite = () => {
       </div>
       <h4>Requirement</h4>
       <p>
-        The stock website was not reflecting the energy of the company and show
-        what they offer on the whole. Also. there was no way for them to update
-        the content and keep the website exciting for new and existing students
+        The report was done in WhatsApp group and was difficult to track 100's
+        of such reports. An accessible and easy to track app was required that
+        will can be analyzed at any time with some standard on reporting.
       </p>
-      <img src={SOSweb} alt="" />
+      <img src={SOSreport} alt="" />
       <Features>
         <h4>Features</h4>
         <p>

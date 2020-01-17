@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { device } from "./../device/device";
 import Tilt from "react-parallax-tilt";
 
-export const ProjectCard = proj => {
+export const ProjectCard = () => {
   const [scale, setScale] = React.useState(1.1);
 
   const ProjCardWrapper = styled.div`
