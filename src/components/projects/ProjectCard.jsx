@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { device } from "./../device/device";
 import Tilt from "react-parallax-tilt";
+import { Link } from "react-router-dom";
 
 export const ProjectCard = () => {
   const [scale, setScale] = React.useState(1.1);
@@ -124,7 +125,9 @@ export const ProjectCard = () => {
           <h4>School of Sports</h4>
           <h5>Website</h5>
           <p>React, NodeJS, Express, Redux, MongoDB, Firebase</p>
-          <button>Read More</button>
+          <Link to="/projects/sos-web">
+            <button>Read More</button>
+          </Link>
         </ProjCard1>
       </Tilt>
       <Tilt tiltEnable={false} scale={scale} transitionSpeed={2500}>
@@ -132,7 +135,9 @@ export const ProjectCard = () => {
           <h4>P&A Stores- Inventory Manager</h4>
           <h5>Web App</h5>
           <p>React, NodeJS, Apollo Hooks, Materialize, MongoDB</p>
-          <button>Read More</button>
+          <Link to="/projects/inventory-manager">
+            <button>Read More</button>
+          </Link>
         </ProjCard2>
       </Tilt>
       <Tilt tiltEnable={false} scale={scale} transitionSpeed={2500}>
@@ -140,7 +145,9 @@ export const ProjectCard = () => {
           <h4>School of Sports- Admin Reporting</h4>
           <h5>Web App</h5>
           <p>React, NodeJS, Apollo Hooks, Materialize, MongoDB</p>
-          <button>Read More</button>
+          <Link to="/projects/sos-reportapp">
+            <button>Read More</button>
+          </Link>
         </ProjCard3>
       </Tilt>
     </ProjCardWrapper>

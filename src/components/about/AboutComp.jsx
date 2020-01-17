@@ -18,8 +18,10 @@ export const AboutComp = () => {
       font-size: 2em;
       position: relative;
       padding-bottom: 0.3em;
+      text-decoration: underline;
+      text-decoration-color: #ff03ff;
     }
-    h3:after {
+    /* h3:after {
       position: absolute;
       width: 20vw;
       display: block;
@@ -27,7 +29,7 @@ export const AboutComp = () => {
       height: 2px;
       border-bottom: solid 3px #ff03ff;
       content: "";
-    }
+    } */
 
     p {
       font-family: "Raleway", sans-serif;

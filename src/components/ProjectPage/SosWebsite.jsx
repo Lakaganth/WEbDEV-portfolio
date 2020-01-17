@@ -87,9 +87,10 @@ export const SosWebsite = () => {
       </div>
       <h4>Requirement</h4>
       <p>
-        The stock website was not reflecting the energy of the company and show
-        what they offer on the whole. Also. there was no way for them to update
-        the content and keep the website exciting for new and existing students
+        The stock website was not reflecting the energy of the company and
+        unable to show what they offer on the whole. Also. there was no way for
+        them to update the content and keep the website exciting for new and
+        existing students
       </p>
       <img src={SOSweb} alt="" />
       <Features>

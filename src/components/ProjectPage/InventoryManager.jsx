@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import Inventory from "../../assets/inventory.svg";
+import IM_1 from "../../assets/im_1.mp4";
 
 export const InventoryManager = () => {
   const PageContainer = styled.div`
@@ -69,6 +70,9 @@ export const InventoryManager = () => {
       text-align: left;
       padding-left: 50px;
     }
+    video {
+      padding-left: 4vw;
+    }
   `;
   return (
     <PageContainer>
@@ -78,7 +82,7 @@ export const InventoryManager = () => {
         Nottingham, United Kingdom.
       </p>
       <div>
-        <a href="https://sos-reporting-webpp.herokuapp.com/" target="_blank">
+        <a href="https://pastoreslist.herokuapp.com/" target="_blank">
           <button>Live</button>
         </a>
         <Link to="/">
@@ -98,6 +102,10 @@ export const InventoryManager = () => {
         <p>
           Front-end developed using React along with Redux for state management.
         </p>
+        <video width="320" height="540" controls loop autoplay muted>
+          <source src={IM_1} type="video/mp4" />> Your browser does not support
+          the video tag.
+        </video>
       </Features>
     </PageContainer>
   );
