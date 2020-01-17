@@ -1,17 +1,15 @@
 import React from "react";
-import LazyLoad from "react-lazyload";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store";
 
 // Components
 import { Navbar } from "./components/navbar/Navbar";
-import { HeroComp } from "./components/hero/HeroComp";
-import { AboutComp } from "./components/about/AboutComp";
-import { Skills } from "./components/skills/Skills";
+import { HomePage } from "./pages/HomePage";
 
 import "./App.css";
-import { ProjectCard } from "./components/projects/ProjectCard";
+import { ProjectsPage } from "./components/ProjectPage/ProjectsPage";
+import { SosWebsite } from "./components/ProjectPage/SosWebsite";
 
 function App() {
   return (
@@ -19,12 +17,9 @@ function App() {
       <Router>
         <Navbar></Navbar>
         <div className="App">
-          <HeroComp></HeroComp>
-          <LazyLoad height={40}>
-            <AboutComp></AboutComp>
-            <Skills></Skills>
-            <ProjectCard></ProjectCard>
-          </LazyLoad>
+          <Route path="/" exact component={HomePage}></Route>
+          <Route path="/projects" exact component={ProjectsPage}></Route>
+          <Route path="/projects/sos-web" exact component={SosWebsite}></Route>
         </div>
       </Router>
     </Provider>

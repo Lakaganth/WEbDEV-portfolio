@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
 import Tilt from "react-parallax-tilt";
 import LazyLoad from "react-lazyload";
+import { Link } from "react-router-dom";
 
 import "./HeroComp.scss";
 import { device } from "./../device/device";
@@ -202,7 +203,9 @@ export const HeroComp = () => {
             {" "}
             I Bring Ideas to Life through Minimalist Design and Clean Code
           </animated.p>
-          <ActionButton style={buttonAnim}>Projects</ActionButton>
+          <Link to="/projects">
+            <ActionButton style={buttonAnim}>Projects</ActionButton>
+          </Link>
         </HeadingDiv>
         <LazyLoad height={200} once>
           <div className="parallax-container">
@@ -214,8 +217,9 @@ export const HeroComp = () => {
               scale={1.02}
               gyroscope={true}
               tiltReverse={true}
-              tiltMaxAngleX={25}
-              tiltMaxAngleY={25}
+              tiltMaxAngleX={10}
+              tiltMaxAngleY={10}
+              trackOnWindow={true}
             >
               <div className="inner-element">
                 <div className="laka-face"></div>
