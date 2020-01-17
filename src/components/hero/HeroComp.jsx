@@ -213,6 +213,7 @@ export const HeroComp = () => {
               glareMaxOpacity={0.2}
               scale={1.02}
               gyroscope={true}
+              tiltReverse={true}
             >
               <div className="inner-element">
                 <div className="laka-face"></div>

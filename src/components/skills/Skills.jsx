@@ -30,7 +30,10 @@ export const Skills = () => {
   const Frontbox = styled.div`
     width: 80vw;
     height: 80vh;
-    background-color: #5037b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     border-radius: 13px;
     margin-bottom: 25vh;
     position: relative;
@@ -39,7 +42,7 @@ export const Skills = () => {
 
     @media ${device.laptop} {
       width: 45vw;
-      height: 60vh;
+      height: 80vh;
       margin-bottom: 0vh;
     }
     @media ${device.tablet} and (max-device-width: 1023px) {
@@ -47,6 +50,10 @@ export const Skills = () => {
   `;
 
   const Backbox = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 80vw;
     height: 80vh;
     background-color: #5037b9;
@@ -57,7 +64,7 @@ export const Skills = () => {
 
     @media ${device.laptop} {
       width: 45vw;
-      height: 60vh;
+      height: 80vh;
       margin-bottom: 0vh;
     }
     @media ${device.tablet} and (max-device-width: 1023px) {
@@ -66,24 +73,25 @@ export const Skills = () => {
   const SkillImage = styled.div`
     position: absolute;
     top: -22vh;
-    left: 0vw;
+    /* left: 10vw; */
     img {
       height: 300px;
       width: 300px;
     }
     @media ${device.laptop} {
       top: -22vh;
-      left: 6vw;
+      left: 8vw;
     }
     @media ${device.tablet} and (max-device-width: 1023px) {
       top: -25vh;
-      left: 20vw;
+      left: 10vw;
     }
   `;
   const BackSkillImage = styled.div`
     position: absolute;
     top: -24vh;
-    left: 5vw;
+    /* left: 0vw; */
+
     img {
       height: 300px;
       width: 300px;
@@ -91,7 +99,7 @@ export const Skills = () => {
 
     @media ${device.laptop} {
       top: -24vh;
-      left: 9vw;
+      left: 12vw;
     }
     @media ${device.tablet} and (max-device-width: 1023px) {
       top: -28vh;
@@ -100,24 +108,17 @@ export const Skills = () => {
   `;
 
   const SkillList = styled.div`
-    padding-top: 5vh;
+    /* padding-top: 5vh; */
     color: black;
     color: #fff;
     h4 {
       font-size: 2em;
       text-transform: uppercase;
       position: relative;
+      text-decoration: underline;
+      text-decoration-color: #ff03ff;
     }
 
-    h4::after {
-      content: "";
-      width: 25vw;
-      height: 2px;
-      display: block;
-      left: 27vw;
-      border-bottom: solid 3px #ff03ff;
-      position: absolute;
-    }
     p {
       font-size: 2rem;
     }

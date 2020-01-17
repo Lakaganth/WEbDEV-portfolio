@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useSpring, animated } from "react-spring";
 import { device } from "./../device/device";
 import { InventoryLandingComp } from "./InventoryLandingComp";
+import { SosReportingLandingComp } from "./SosReportingLandingComp";
 
 export const ProjectCard = proj => {
   const calc = (x, y) => [
@@ -106,8 +107,8 @@ export const ProjectCard = proj => {
         <p>React, NodeJS, Express, Redux, MongoDB, Firebase</p>
         <button>Read More</button>
       </ProjCard1>
-
       <InventoryLandingComp></InventoryLandingComp>
+      <SosReportingLandingComp></SosReportingLandingComp>
     </ProjCardWrapper>
   );
 };
