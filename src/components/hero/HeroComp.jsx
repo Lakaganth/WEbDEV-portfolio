@@ -214,6 +214,8 @@ export const HeroComp = () => {
               scale={1.02}
               gyroscope={true}
               tiltReverse={true}
+              tiltMaxAngleX={25}
+              tiltMaxAngleY={25}
             >
               <div className="inner-element">
                 <div className="laka-face"></div>
