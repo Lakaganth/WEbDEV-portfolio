@@ -153,6 +153,7 @@ export const HeroComp = () => {
     text-transform: uppercase;
     background: linear-gradient(145deg, #332b44, #2b243a);
     box-shadow: 6px 6px 12px #13101a, -6px -6px 12px #4d4066;
+    z-index: 50;
     @media ${device.laptop} {
       left: 0;
       margin-top: 5vh;
