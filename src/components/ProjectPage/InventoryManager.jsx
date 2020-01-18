@@ -5,7 +5,7 @@ import styled from "styled-components";
 import Inventory from "../../assets/inventory.svg";
 import IM_1 from "../../assets/im_1.mp4";
 import IM_2 from "../../assets/im_2.mp4";
-import IM_3 from "../../assets/im_3.mp4";
+import IM_3 from "../../assets/im_3_comp.mp4";
 import IM_4 from "../../assets/im_4.mp4";
 
 export const InventoryManager = () => {
@@ -129,7 +129,7 @@ export const InventoryManager = () => {
           New Product, category and store can be added and updated by the
           emplyoee
         </p>
-        <video width="360" height="340" controls loop autoPlay muted>
+        <video width="320" height="340" controls loop autoPlay muted>
           <source src={IM_4} type="video/mp4" />> Your browser does not support
           the video tag.
         </video>

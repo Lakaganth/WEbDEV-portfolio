@@ -13,6 +13,7 @@ import { SosWebsite } from "./components/ProjectPage/SosWebsite";
 import { SosReport } from "./components/ProjectPage/SosReport";
 import { InventoryManager } from "./components/ProjectPage/InventoryManager";
 import ScrollToTop from "./ScrollToTop";
+import { AboutPage } from "./components/aboutPage/AboutPage";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
             exact
             component={InventoryManager}
           ></Route>
+          <Route path="/about" exact component={AboutPage}></Route>
         </div>
       </Router>
     </Provider>
