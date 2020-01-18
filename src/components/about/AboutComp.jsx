@@ -21,15 +21,6 @@ export const AboutComp = () => {
       text-decoration: underline;
       text-decoration-color: #ff03ff;
     }
-    /* h3:after {
-      position: absolute;
-      width: 20vw;
-      display: block;
-      bottom: 0;
-      height: 2px;
-      border-bottom: solid 3px #ff03ff;
-      content: "";
-    } */
 
     p {
       font-family: "Raleway", sans-serif;
@@ -49,7 +40,7 @@ export const AboutComp = () => {
     <AboutWrapper>
       <h3>About</h3>
       <div>
-        <img src={AboutPot} alt="" />
+        <img src={AboutPot} alt="About" />
       </div>
       <p>
         I'm a self taught full stack developer. I have serious passion for

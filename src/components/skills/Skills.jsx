@@ -9,7 +9,6 @@ export const Skills = () => {
   const SkillWrapper = styled.div`
     /* height: 100vh; */
     width: 100vw;
-
     margin-top: 10vh;
     display: flex;
     flex-direction: column;
@@ -29,11 +28,12 @@ export const Skills = () => {
   `;
   const Frontbox = styled.div`
     width: 80vw;
-    height: 80vh;
+    height: 110vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: space-between;
+
     border-radius: 13px;
     margin-bottom: 25vh;
     position: relative;
@@ -42,7 +42,7 @@ export const Skills = () => {
 
     @media ${device.laptop} {
       width: 45vw;
-      height: 80vh;
+      height: 100vh;
       margin-bottom: 0vh;
     }
     @media ${device.tablet} and (max-device-width: 1023px) {
@@ -55,7 +55,7 @@ export const Skills = () => {
     align-items: center;
     flex-direction: column;
     width: 80vw;
-    height: 80vh;
+    height: 110vh;
     background-color: #5037b9;
     border-radius: 13px;
     position: relative;
@@ -64,7 +64,7 @@ export const Skills = () => {
 
     @media ${device.laptop} {
       width: 45vw;
-      height: 80vh;
+      height: 100vh;
       margin-bottom: 0vh;
     }
     @media ${device.tablet} and (max-device-width: 1023px) {

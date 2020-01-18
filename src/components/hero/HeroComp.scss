@@ -8,8 +8,8 @@
   overflow: hidden;
   position: absolute;
   z-index: -5;
-  top: 3vh;
-  left: 30vw;
+  top: -1vh;
+  left: 40vw;
   z-index: -10;
   opacity: 0.15;
   transform: translate3d(-50vw, -18vh, 0);
@@ -20,8 +20,8 @@
   overflow: hidden;
   position: absolute;
   z-index: -5;
-  bottom: 3vh;
-  right: 30px;
+  bottom: 13vh;
+  right: 0px;
   z-index: -10;
   opacity: 0.15;
   // transform: translate3d(-50vw, -18vh, 0);
@@ -136,17 +136,24 @@
     left: -105px;
   }
   .path {
-    width: 130%;
+    display: none;
+    // width: 100%;
+    // height: 120%;
+    // position: absolute;
+    // top: -20vh;
+    // left: 0vw;
+    // z-index: -10;
+    // opacity: 0.15;
+    // transform: translate3d(-50vw, -18vh, 0);
+    // overflow-x: hidden;
+    // width: 130%;
+    // height: 120%;
+  }
+  .path2 {
+    width: 100%;
     height: 120%;
-    overflow: hidden;
-
-    position: absolute;
     z-index: -5;
-    top: 0;
-    left: 20vw;
-    z-index: -10;
     opacity: 0.15;
-    transform: translate3d(-50vw, -18vh, 0);
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {

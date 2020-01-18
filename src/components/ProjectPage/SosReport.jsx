@@ -8,7 +8,7 @@ export const SosReport = () => {
   const PageContainer = styled.div`
     width: 80%;
     margin: 0 auto;
-    padding-top: 10vh;
+    /* padding-top: 10vh; */
     font-family: raleway;
     h2 {
       text-align: left;

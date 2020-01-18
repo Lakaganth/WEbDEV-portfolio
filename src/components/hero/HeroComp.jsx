@@ -53,7 +53,7 @@ export const HeroComp = () => {
   const HeadingDiv = styled.div`
     color: #fff;
     font-family: "Raleway", sans-serif;
-    padding: 15vh 0 0 0;
+    /* padding: 15vh 0 0 0; */
     text-align: right;
     position: relative;
     h1 {

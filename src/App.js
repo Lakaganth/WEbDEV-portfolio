@@ -12,11 +12,13 @@ import { ProjectsPage } from "./components/ProjectPage/ProjectsPage";
 import { SosWebsite } from "./components/ProjectPage/SosWebsite";
 import { SosReport } from "./components/ProjectPage/SosReport";
 import { InventoryManager } from "./components/ProjectPage/InventoryManager";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <Provider store={store}>
       <Router>
+        <ScrollToTop />
         <Navbar></Navbar>
         <div className="App">
           <Route path="/" exact component={HomePage}></Route>

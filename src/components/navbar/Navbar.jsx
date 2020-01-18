@@ -8,7 +8,7 @@ export const Navbar = () => {
   const [isNavOpen, setNavOpen] = useState(false);
 
   const NavDiv = styled.div`
-    position: fixed;
+    position: sticky;
     width: 90%;
     margin: 0 auto;
     padding: 0.5em;
