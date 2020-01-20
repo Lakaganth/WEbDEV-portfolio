@@ -85,7 +85,11 @@ export const InventoryManager = () => {
         Nottingham, United Kingdom.
       </p>
       <div>
-        <a href="https://pastoreslist.herokuapp.com/" target="_blank">
+        <a
+          href="https://pastoreslist.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>Live</button>
         </a>
         <Link to="/">

@@ -3,6 +3,9 @@ import React from "react";
 import Profile from "../../assets/profile.png";
 import styled from "styled-components";
 
+// import HelloWorld from "../../assets/helloworld.mp4";
+import { HelloWorld } from "./HelloWorld";
+
 export const AboutPage = () => {
   // Wrapper
   const AboutWrapper = styled.div`
@@ -33,9 +36,9 @@ export const AboutPage = () => {
 
   const ProfileImage = styled.div`
     img {
-      width: 300px;
+      width: 250px;
       height: 300px;
-      border-radius: 50%;
+      border-radius: 20px;
     }
   `;
   return (
@@ -50,7 +53,9 @@ export const AboutPage = () => {
         CSS, but with printing "Hello World" on the screen with the click of a
         button using JavaScript is what made me love web development.
       </p>
-      <div></div>
+      <div>
+        <HelloWorld></HelloWorld>
+      </div>
       <p>
         I went thorough a lot of videos on YouTube and started working on simple
         websites. but honestly I was not impressed by the designs and the layout

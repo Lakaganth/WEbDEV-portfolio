@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import SOSweb from "../../assets/sosweb.svg";
+import SOS_1 from "../../assets/sos_1.mp4";
+import SOS_2 from "../../assets/sos_2.mp4";
+import SOS_3 from "../../assets/sos_3.mp4";
 
 export const SosWebsite = () => {
   const PageContainer = styled.div`
@@ -78,7 +81,11 @@ export const SosWebsite = () => {
         schools by training students through specialized and proven coaches
       </p>
       <div>
-        <a href="https://schoolofsports.herokuapp.com/" target="_blank">
+        <a
+          href="https://schoolofsports.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>Live</button>
         </a>
         <Link to="/">
@@ -98,6 +105,19 @@ export const SosWebsite = () => {
         <p>
           Front-end developed using React along with Redux for state management.
         </p>
+        <video height="320px" controls loop autoPlay muted>
+          <source src={SOS_1} type="video/mp4" />> Your browser does not support
+          the video tag.
+        </video>
+        <p>Order list is made for all the products before placing order.</p>
+        <video height="320px" controls loop autoPlay muted>
+          <source src={SOS_2} type="video/mp4" />> Your browser does not support
+          the video tag.
+        </video>
+        <video height="320px" controls loop autoPlay muted>
+          <source src={SOS_3} type="video/mp4" />> Your browser does not support
+          the video tag.
+        </video>
       </Features>
     </PageContainer>
   );

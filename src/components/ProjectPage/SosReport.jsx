@@ -78,7 +78,11 @@ export const SosReport = () => {
         report back on fee payments, class durations and any feedback.
       </p>
       <div>
-        <a href="https://sos-reporting-webpp.herokuapp.com/" target="_blank">
+        <a
+          href="https://sos-reporting-webpp.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>Live</button>
         </a>
         <Link to="/">

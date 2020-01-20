@@ -14,6 +14,7 @@ import { SosReport } from "./components/ProjectPage/SosReport";
 import { InventoryManager } from "./components/ProjectPage/InventoryManager";
 import ScrollToTop from "./ScrollToTop";
 import { AboutPage } from "./components/aboutPage/AboutPage";
+import { ContactPage } from "./components/contactPage/ContactPage";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             component={InventoryManager}
           ></Route>
           <Route path="/about" exact component={AboutPage}></Route>
+          <Route path="/contact" exact component={ContactPage}></Route>
         </div>
       </Router>
     </Provider>
