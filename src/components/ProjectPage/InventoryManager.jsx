@@ -1,12 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import LazyLoad from "react-lazyload";
 
 import Inventory from "../../assets/inventory.svg";
 import IM_1 from "../../assets/im_1.mp4";
 import IM_2 from "../../assets/im_2.mp4";
 import IM_3 from "../../assets/im_3_comp.mp4";
 import IM_4 from "../../assets/im_4.mp4";
+import { device } from "./../device/device";
 
 export const InventoryManager = () => {
   const PageContainer = styled.div`
@@ -77,6 +78,100 @@ export const InventoryManager = () => {
       padding-left: 4vw;
     }
   `;
+
+  const VideoDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 3vh;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    p {
+      color: #fff;
+      font-size: 1.2rem;
+      text-align: left;
+      padding-left: 0px;
+    }
+    video {
+      width: 300px;
+      height: 500px;
+    }
+    span {
+      color: #fff;
+      font-size: 0.6rem;
+      padding-top: 10px;
+      text-align: left;
+    }
+    div {
+      span {
+        display: none;
+      }
+    }
+
+    @media ${device.mobileL} {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      video {
+        width: 300px;
+        height: 300px;
+      }
+      p {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: left;
+      }
+    }
+
+    @media ${device.tablet} {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      video {
+        width: 500px;
+        height: 500px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span {
+          display: flex;
+        }
+      }
+      span {
+        display: none;
+      }
+    }
+
+    @media ${device.laptopL} {
+      p {
+        font-size: 1.8rem;
+      }
+      span {
+        font-size: 1.4rem;
+      }
+    }
+    @media ${device.desktop} {
+      p {
+        font-size: 1.8rem;
+      }
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  `;
   return (
     <PageContainer>
       <h2>P&A STORES - Inventory Manager</h2>
@@ -92,53 +187,83 @@ export const InventoryManager = () => {
         >
           <button>Live</button>
         </a>
-        <Link to="/">
+        <a
+          href="https://github.com/Lakaganth/PA_LIST"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>Code</button>
-        </Link>
+        </a>
       </div>
       <h4>Requirement</h4>
-      <p>
-        The inventory count takes up at least an hour before an purchase order
-        is put up and have no records on studying any sort of historical data.
-        The app must be fast and easy to use for any new employee with minimal
-        training.
-      </p>
-      <img src={Inventory} alt="" />
-      <Features>
-        <h4>Features</h4>
+      <LazyLoad height={40}>
         <p>
-          Front-end developed using React along with Redux for state management.
+          The inventory count takes up at least an hour before an purchase order
+          is put up and have no records on studying any sort of historical data.
+          The app must be fast and easy to use for any new employee with minimal
+          training.
         </p>
+        <img src={Inventory} alt="" />
+        <Features>
+          <h4>Features</h4>
+          <VideoDiv>
+            <div>
+              <p>
+                Front-end developed using React along with Redux for state
+                management.
+              </p>
+              <p>
+                Order list is made for all the products before placing order.
+              </p>
+            </div>
+            <video width="320" height="540" controls loop autoPlay muted>
+              <source src={IM_1} type="video/mp4" />> Your browser does not
+              support the video tag.
+            </video>
+          </VideoDiv>
+          <VideoDiv>
+            {" "}
+            <div>
+              {" "}
+              <p>
+                Once List is prepared, they can be checked off and on hitting
+                complete an email is triggered to the store email on today's
+                order.
+              </p>
+            </div>
+            <video width="320" height="540" controls loop autoPlay muted>
+              <source src={IM_2} type="video/mp4" />> Your browser does not
+              support the video tag.
+            </video>
+          </VideoDiv>
+          <VideoDiv>
+            {" "}
+            <div>
+              <p>Inventory check is done and updated for each product</p>
+              <p>
+                New Product, category and store can be added and updated by the
+                emplyoee
+              </p>
+            </div>
+            <video width="320" height="540" controls loop autoPlay muted>
+              <source src={IM_3} type="video/mp4" />> Your browser does not
+              support the video tag.
+            </video>
+          </VideoDiv>
+          <VideoDiv>
+            <div>
+              <p>
+                Mobile first design, optimized for tablet and desktop version
+              </p>
+            </div>
 
-        <video width="320" height="540" controls loop autoPlay muted>
-          <source src={IM_1} type="video/mp4" />> Your browser does not support
-          the video tag.
-        </video>
-        <p>Order list is made for all the products before placing order.</p>
-
-        <p>
-          Once List is prepared, they can be checked off and on hitting complete
-          an email is triggered to the store email on today's order.
-        </p>
-        <video width="320" height="540" controls loop autoPlay muted>
-          <source src={IM_2} type="video/mp4" />> Your browser does not support
-          the video tag.
-        </video>
-        <p>Inventory check is done and updated for each product</p>
-        <video width="320" height="540" controls loop autoPlay muted>
-          <source src={IM_3} type="video/mp4" />> Your browser does not support
-          the video tag.
-        </video>
-        <p>
-          New Product, category and store can be added and updated by the
-          emplyoee
-        </p>
-        <video width="320" height="340" controls loop autoPlay muted>
-          <source src={IM_4} type="video/mp4" />> Your browser does not support
-          the video tag.
-        </video>
-        <p>Mobile first design, optimized for tablet and desktop version</p>
-      </Features>
+            <video width="320" height="340" controls loop autoPlay muted>
+              <source src={IM_4} type="video/mp4" />> Your browser does not
+              support the video tag.
+            </video>
+          </VideoDiv>
+        </Features>
+      </LazyLoad>
     </PageContainer>
   );
 };

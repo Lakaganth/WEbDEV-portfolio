@@ -1,18 +1,19 @@
 import React from "react";
 import LazyLoad from "react-lazyload";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import SOSweb from "../../assets/sosweb.svg";
+// import SOSweb from "../../assets/sosweb.svg";
+import SOSweb1 from "../../assets/SOSweb1.svg";
 import SOS_1 from "../../assets/sos_1.mp4";
 import SOS_2 from "../../assets/sos_2.mp4";
 import SOS_3 from "../../assets/sos_3.mp4";
+import { device } from "./../device/device";
 
 export const SosWebsite = () => {
   const PageContainer = styled.div`
     width: 80%;
     margin: 0 auto;
-    /* padding-top: 10vh; */
+    padding-top: 10vh;
     font-family: raleway;
     h2 {
       text-align: left;
@@ -53,8 +54,14 @@ export const SosWebsite = () => {
     }
 
     img {
-      /* width: 450px;
-      height: 450px; */
+      width: 450px;
+      height: 450px;
+    }
+    @media ${device.mobileL} {
+      img {
+        width: 650px;
+        height: 650px;
+      }
     }
   `;
 
@@ -71,9 +78,104 @@ export const SosWebsite = () => {
       color: #fff;
       font-size: 1.2rem;
       text-align: left;
-      padding-left: 50px;
     }
   `;
+
+  const VideoDiv = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    p {
+      color: #fff;
+      font-size: 1.2rem;
+      text-align: left;
+      padding-left: 0px;
+    }
+    video {
+      width: 300px;
+      height: 300px;
+    }
+    span {
+      color: #fff;
+      font-size: 0.6rem;
+      padding-top: 10px;
+      text-align: left;
+    }
+    div {
+      span {
+        display: none;
+      }
+    }
+
+    // Tablet
+    @media (min-width: 426px) and (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      video {
+        width: 400px;
+        height: 400px;
+      }
+      p {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: left;
+      }
+    }
+
+    // Laptop
+    @media (min-width: 769px) and (max-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      video {
+        width: 500px;
+        height: 500px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span {
+          display: flex;
+        }
+      }
+      span {
+        display: none;
+      }
+    }
+
+    @media ${device.laptopL} {
+      p {
+        font-size: 1.8rem;
+      }
+      span {
+        font-size: 1.4rem;
+      }
+    }
+    @media ${device.desktop} {
+      p {
+        font-size: 1.8rem;
+      }
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  `;
+
   return (
     <PageContainer>
       <h2>School of Sports - Website</h2>
@@ -89,9 +191,13 @@ export const SosWebsite = () => {
         >
           <button>Live</button>
         </a>
-        <Link to="/">
+        <a
+          href="https://github.com/Lakaganth/SOS-website"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button>Code</button>
-        </Link>
+        </a>
       </div>
       <h4>Requirement</h4>
       <LazyLoad height={40}>
@@ -101,47 +207,66 @@ export const SosWebsite = () => {
           for them to update the content and keep the website exciting for new
           and existing students
         </p>
-        <img src={SOSweb} alt="" />
+        <img src={SOSweb1} alt="" />
         <Features>
           <h4>Features</h4>
-          <p>
-            Website's frontend was developed using React and backend using
-            NodeJs Express
-          </p>
-          <video controls loop autoPlay muted>
-            <source src={SOS_1} type="video/mp4" />> Your browser does not
-            support the video tag.
-          </video>
-          <p>Animations done using React-spring.</p>
-          <p>
-            80% of data is fetched from back-end though Apollo GraphQL server
-          </p>
-          <video controls loop muted>
-            <source src={SOS_2} type="video/mp4" />> Your browser does not
-            support the video tag.
-          </video>
-          <p>
-            *Please note the data is just representational and doesn't resemble
-            the original website data
-          </p>
-          <p>
-            Admin can will be able to add, modify and delete coaches info,
-            gallery pictures, testimonials and new sport.
-          </p>
-          <div>
+          <VideoDiv>
+            <div>
+              <p>
+                Website's frontend was developed using React and backend using
+                NodeJs Express
+              </p>
+              <p>Animations done using React-spring.</p>
+            </div>
+
+            <video controls loop autoPlay muted>
+              <source src={SOS_1} type="video/mp4" />> Your browser does not
+              support the video tag.
+            </video>
+          </VideoDiv>
+          <VideoDiv>
+            <div>
+              <p>
+                80% of data is fetched from back-end though Apollo GraphQL
+                server
+              </p>
+              <span>
+                *Please note the data is just representational and doesn't
+                resemble the original website data
+              </span>
+            </div>
+
+            <video controls loop muted>
+              <source src={SOS_2} type="video/mp4" />> Your browser does not
+              support the video tag.
+            </video>
+            <span>
+              *Please note the data is just representational and doesn't
+              resemble the original website data
+            </span>
+          </VideoDiv>
+          <VideoDiv>
+            {" "}
+            <div>
+              {" "}
+              <p>
+                Admin can will be able to add, modify and delete coaches info,
+                gallery pictures, testimonials and new sport.
+              </p>
+              <p>
+                Data is stored in MongoDB cloud server and connection is
+                established through Mongoose.
+              </p>
+              <p>
+                GraphQL is used to establish connection between server to
+                simplify the multiple endpoints.
+              </p>
+            </div>
             <video controls loop muted>
               <source src={SOS_3} type="video/mp4" />> Your browser does not
               support the video tag.
             </video>
-            <p>
-              Data is stored in MongoDB cloud server and connection is
-              established through Mongoose.
-            </p>
-            <p>
-              GraphQL is used to establish connection between server to simplify
-              the multiple endpoints.
-            </p>
-          </div>
+          </VideoDiv>
         </Features>
       </LazyLoad>
     </PageContainer>

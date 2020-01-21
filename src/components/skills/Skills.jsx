@@ -28,7 +28,7 @@ export const Skills = () => {
   `;
   const Frontbox = styled.div`
     width: 80vw;
-    height: 110vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -55,7 +55,7 @@ export const Skills = () => {
     align-items: center;
     flex-direction: column;
     width: 80vw;
-    height: 110vh;
+    height: 80vh;
     background-color: #5037b9;
     border-radius: 13px;
     position: relative;
