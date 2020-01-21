@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from "react-lazyload";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -93,32 +94,56 @@ export const SosWebsite = () => {
         </Link>
       </div>
       <h4>Requirement</h4>
-      <p>
-        The stock website was not reflecting the energy of the company and
-        unable to show what they offer on the whole. Also. there was no way for
-        them to update the content and keep the website exciting for new and
-        existing students
-      </p>
-      <img src={SOSweb} alt="" />
-      <Features>
-        <h4>Features</h4>
+      <LazyLoad height={40}>
         <p>
-          Front-end developed using React along with Redux for state management.
+          The stock website was not reflecting the energy of the company and
+          unable to show what they offer on the whole. Also. there was no way
+          for them to update the content and keep the website exciting for new
+          and existing students
         </p>
-        <video height="320px" controls loop autoPlay muted>
-          <source src={SOS_1} type="video/mp4" />> Your browser does not support
-          the video tag.
-        </video>
-        <p>Order list is made for all the products before placing order.</p>
-        <video height="320px" controls loop autoPlay muted>
-          <source src={SOS_2} type="video/mp4" />> Your browser does not support
-          the video tag.
-        </video>
-        <video height="320px" controls loop autoPlay muted>
-          <source src={SOS_3} type="video/mp4" />> Your browser does not support
-          the video tag.
-        </video>
-      </Features>
+        <img src={SOSweb} alt="" />
+        <Features>
+          <h4>Features</h4>
+          <p>
+            Website's frontend was developed using React and backend using
+            NodeJs Express
+          </p>
+          <video controls loop autoPlay muted>
+            <source src={SOS_1} type="video/mp4" />> Your browser does not
+            support the video tag.
+          </video>
+          <p>Animations done using React-spring.</p>
+          <p>
+            80% of data is fetched from back-end though Apollo GraphQL server
+          </p>
+          <video controls loop muted>
+            <source src={SOS_2} type="video/mp4" />> Your browser does not
+            support the video tag.
+          </video>
+          <p>
+            *Please note the data is just representational and doesn't resemble
+            the original website data
+          </p>
+          <p>
+            Admin can will be able to add, modify and delete coaches info,
+            gallery pictures, testimonials and new sport.
+          </p>
+          <div>
+            <video controls loop muted>
+              <source src={SOS_3} type="video/mp4" />> Your browser does not
+              support the video tag.
+            </video>
+            <p>
+              Data is stored in MongoDB cloud server and connection is
+              established through Mongoose.
+            </p>
+            <p>
+              GraphQL is used to establish connection between server to simplify
+              the multiple endpoints.
+            </p>
+          </div>
+        </Features>
+      </LazyLoad>
     </PageContainer>
   );
 };
