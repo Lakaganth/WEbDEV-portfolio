@@ -1,0 +1,33 @@
+.imgdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .report_vector {
+    margin-bottom: 2vh;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .report_vector {
+    width: 600px;
+  }
+  .report_Whatsapp {
+    width: 300px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .report_vector {
+    width: 600px;
+  }
+  .report_Whatsapp {
+    width: 300px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .report_vector {
+    width: 800px;
+  }
+}

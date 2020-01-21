@@ -54,14 +54,10 @@ export const SosWebsite = () => {
     }
 
     img {
-      width: 450px;
-      height: 450px;
+      width: 380px;
+      height: 380px;
     }
     @media ${device.mobileL} {
-      img {
-        width: 650px;
-        height: 650px;
-      }
     }
   `;
 
@@ -134,7 +130,7 @@ export const SosWebsite = () => {
       }
     }
 
-    // Laptop
+    /* // Laptop */
     @media (min-width: 769px) and (max-width: 1024px) {
       display: flex;
       flex-direction: row;
@@ -159,6 +155,26 @@ export const SosWebsite = () => {
     }
 
     @media ${device.laptopL} {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      video {
+        width: 500px;
+        height: 500px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span {
+          display: flex;
+        }
+      }
+      span {
+        display: none;
+      }
       p {
         font-size: 1.8rem;
       }
@@ -166,8 +182,28 @@ export const SosWebsite = () => {
         font-size: 1.4rem;
       }
     }
-    // Desktop
-    @media (min-width: 1025px) and (max-width: 1440px) {
+    /* // Desktop */
+    @media (min-width: 1025px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      video {
+        width: 500px;
+        height: 500px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        span {
+          display: flex;
+        }
+      }
+      span {
+        display: none;
+      }
       p {
         font-size: 1.8rem;
       }

@@ -111,7 +111,7 @@
   left: 50vw;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
   .hero-wrapper {
     &::before {
       top: -35vh;
@@ -194,5 +194,49 @@
     z-index: -10;
     opacity: 0.15;
     transform: translate3d(-50vw, -18vh, 0);
+  }
+}
+
+@media (min-width: 1441px) {
+  .laka-face {
+    width: 25vw;
+    height: 25vh;
+    top: -350px;
+    left: -235px;
+  }
+  .hero-wrapper {
+    &::before {
+      top: -35vh;
+    }
+  }
+  .sun-bg {
+    width: 150vw;
+    height: 150vh;
+    top: -50vh;
+    left: -55vw;
+    z-index: -5;
+  }
+
+  .parallax-effect-glare-scale {
+    min-width: 45vw;
+    min-height: 55vh;
+  }
+
+  .path {
+    display: none;
+    // width: 100%;
+    // height: 120%;
+    // position: absolute;
+    // top: -20vh;
+    // left: 0vw;
+    // z-index: -10;
+    // opacity: 0.15;
+    // transform: translate3d(-50vw, -18vh, 0);
+    // overflow-x: hidden;
+    // width: 130%;
+    // height: 120%;
+  }
+  .path2 {
+    display: none;
   }
 }

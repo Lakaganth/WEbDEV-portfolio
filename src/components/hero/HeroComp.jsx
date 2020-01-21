@@ -137,6 +137,30 @@ export const HeroComp = () => {
         padding-left: 20vw;
       }
     }
+    @media ${device.laptopL} {
+      padding-top: 0vh;
+      h1 {
+        font-size: 4.5rem;
+        padding-right: 5vw;
+        width: 50%;
+      }
+      h1::after {
+        position: absolute;
+        bottom: 0;
+        left: 29vw;
+        width: 40%;
+        border-bottom: solid 3px #ff03ff;
+        content: "";
+      }
+      h3 {
+        font-size: 4rem;
+        width: 50%;
+      }
+      p {
+        font-size: 1.6rem;
+        width: 50%;
+      }
+    }
   `;
 
   const ActionButton = styled(animated.button)`
@@ -163,6 +187,11 @@ export const HeroComp = () => {
       right: 150px;
       margin-left: -30vw;
       margin-right: 0;
+    }
+    @media ${device.laptopL} {
+      width: 250px;
+      height: 65px;
+      margin-left: 34vw;
     }
   `;
 
