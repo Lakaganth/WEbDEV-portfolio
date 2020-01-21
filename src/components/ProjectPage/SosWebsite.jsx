@@ -166,7 +166,8 @@ export const SosWebsite = () => {
         font-size: 1.4rem;
       }
     }
-    @media ${device.desktop} {
+    // Desktop
+    @media (min-width: 1025px) and (max-width: 1440px) {
       p {
         font-size: 1.8rem;
       }
