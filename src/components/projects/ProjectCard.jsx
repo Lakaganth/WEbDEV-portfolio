@@ -59,6 +59,19 @@ export const ProjectCard = () => {
             width: 20vw;
           }
         }
+        @media ${device.laptopL} {
+          width: 30%;
+          margin: 0 auto;
+          h4 {
+            font-size: 2.3rem;
+          }
+          h5 {
+            font-size: 1.8rem;
+          }
+          p {
+            font-size: 1.5rem;
+          }
+        }
       }
     }
   `;

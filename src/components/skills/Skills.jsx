@@ -28,34 +28,43 @@ export const Skills = () => {
   `;
   const Frontbox = styled.div`
     width: 80vw;
-    height: 80vh;
+    height: 110vh;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: space-between;
+    /* align-items: space-between; */
 
     border-radius: 13px;
     margin-bottom: 25vh;
-    position: relative;
+    /* position: relative; */
     background-color: #a4508b;
     background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
 
     @media ${device.laptop} {
       width: 45vw;
-      height: 100vh;
+
       margin-bottom: 0vh;
     }
     @media ${device.tablet} and (max-device-width: 1023px) {
+    }
+    @media ${device.laptopL} {
+      width: 25vw;
+    }
+    @media ${device.desktop} {
+      width: 15vw;
+    }
+  `;
+  const SkillImage = styled.div`
+    img {
+      height: 300px;
+      width: 300px;
     }
   `;
 
   const Backbox = styled.div`
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     width: 80vw;
-    height: 80vh;
+    height: 110vh;
     background-color: #5037b9;
     border-radius: 13px;
     position: relative;
@@ -64,32 +73,20 @@ export const Skills = () => {
 
     @media ${device.laptop} {
       width: 45vw;
-      height: 100vh;
+
       margin-bottom: 0vh;
     }
     @media ${device.tablet} and (max-device-width: 1023px) {
     }
-  `;
-  const SkillImage = styled.div`
-    position: absolute;
-    top: -22vh;
-    /* left: 10vw; */
-    img {
-      height: 300px;
-      width: 300px;
+    @media ${device.laptopL} {
+      width: 25vw;
     }
-    @media ${device.laptop} {
-      top: -22vh;
-      left: 8vw;
-    }
-    @media ${device.tablet} and (max-device-width: 1023px) {
-      top: -25vh;
-      left: 10vw;
+    @media ${device.desktop} {
+      width: 15vw;
     }
   `;
+
   const BackSkillImage = styled.div`
-    position: absolute;
-    top: -24vh;
     /* left: 0vw; */
 
     img {
@@ -97,7 +94,7 @@ export const Skills = () => {
       width: 300px;
     }
 
-    @media ${device.laptop} {
+    /* @media ${device.laptop} {
       top: -24vh;
       left: 12vw;
     }
@@ -105,6 +102,13 @@ export const Skills = () => {
       top: -28vh;
       left: 22vw;
     }
+    @media ${device.laptopL} {
+      left: 0vw;
+    }
+    @media ${device.desktop} {
+      left: 2vw;
+      top: -25vh;
+    } */
   `;
 
   const SkillList = styled.div`
@@ -122,14 +126,19 @@ export const Skills = () => {
     p {
       font-size: 2rem;
     }
+    @media ${device.laptopL} {
+    }
   `;
 
   return (
     <SkillWrapper>
       <Frontbox>
-        <SkillImage>
-          <img src={Frontend} alt="" />
-        </SkillImage>
+        <div>
+          <SkillImage>
+            <img src={Frontend} alt="" />
+          </SkillImage>
+        </div>
+
         <SkillList>
           <h4>FrontEnd</h4>
           <p>ReactJs</p>

@@ -7,14 +7,14 @@ import styled from "styled-components";
 export const ContactPage = () => {
   const ContactWrapper = styled.div`
     width: 80%;
+    height: 80vh;
     margin: 0 auto;
     font-family: raleway;
     h2 {
       text-align: center;
       font-size: 2.5rem;
       color: #f26e6e;
-      text-decoration:underline;
-      
+      text-decoration: underline;
     }
     h4 {
       text-align: left;
